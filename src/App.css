@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
-}
+@import "~quill/dist/quill.snow.css";
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+ 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 2px;
+  background-color: #f0f0f0;
+}
+
+.left-container {
+  margin: 0%;
+  width: 15%;
+  height: 640px;
+  padding: 20px;
+  background-color: rgb(50, 189, 148);
+}
+
+.right-container {
+  width: 14%;
+  height: 640px;
+  margin-left: 0%;
+  padding: 20px;
+  background-color: #280202;
+}
+
+.new-note-container {
+  margin-bottom: 20px;
+  color: #0b0b0b;
+  
+}
+
+.quick-notes-container {
+  margin-bottom: 20px;
+}
+
+.all-notes-container {
+  margin-bottom: 20px;
+}
+
+.favorites-container {
+  margin-bottom: 20px;
+}
+
+.trash-container {
+  margin-bottom: 20px;
+}
+
+.categories-container {
+  margin-bottom: 20px;
+}
+
+.note-container {
+  margin-bottom: 20px;
+ 
+}
+
+.new-note-container {
+  margin-bottom: 20px;
+}
+
+.download-container {
+  margin-bottom: 20px;
+}
+
+.note-container textarea {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  font-size: 18px;
+  font-family: Arial;
+  color: black;
+  background-color: rgb(253, 253, 253);
+  margin: 10px;
+}
+
+.new-note-container textarea {
+  width: 100%;
+  height: 600px;
+  padding: 10px;
+  font-size: 18px;
+  font-family: Arial;
+  margin: 10px;
+}
+
+.download-container button {
+  width: 10%;
+  height: 30px;
+  padding: 10px;
+  font-size: 18px;
+  font-family: Arial;
+  color: black;
+  background-color: white;
+  margin: 10px;
+}
+
+.save-note-container button {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  font-size: 18px;
+  font-family: Arial;
+  color: black;
+  background-color: white;
+  margin: 10px;
+}
+
+button {
+  margin-right: 10px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+ 
+  
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar input[type="text"] {
+  flex: 1;
+  padding: 11px;
+  
+  border-radius: 5px;
+}
+
+.search-bar button[type="submit"] {
+  background-color: #f0faf0;
   color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.search-bar button[type="submit"]:hover {
+  background-color: #3a7e3d;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-bar i {
+  font-size: 18px;
+  margin-left: 1px;
+}
+h2{
+  color: #f0faf0;
+}
+textarea,
+.quill-container {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  
+}
+.textarea-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-note-container {
+  margin-bottom: 20px;
+}
+
+.note-textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  margin-top: 10px;
 }
